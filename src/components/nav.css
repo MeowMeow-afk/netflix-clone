@@ -1,0 +1,51 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.01);
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.3s ease-in;
+  display: flex;
+  gap: 600px;
+}
+.NetflixLogo {
+  object-fit: contain;
+  padding-left: 50px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  height: 50px;
+  width: 100px;
+}
+.inner_navbar1 {
+  display: flex;
+}
+.navList {
+  padding-left: 190px;
+  padding-top: 23px;
+  padding-bottom: 26px;
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+.navList li {
+  color: white;
+  cursor: pointer;
+}
+.navList li:hover {
+  color: #d7dde3;
+}
+.make_nav_black {
+  background-color: #111;
+}
+.right_side_nav {
+  display: flex;
+  gap: 50px;
+}
+.Right_side_icons {
+  height: 18px;
+  width: 18px;
+  padding-top: 24px;
+  cursor: pointer;
+}

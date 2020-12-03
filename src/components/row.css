@@ -1,0 +1,44 @@
+.row {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 16px;
+  color: aliceblue;
+}
+.inner_row {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.inner_row::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.inner_row {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.inner_row_image {
+  display: inline;
+  max-height: 110px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+.inner_row_image:hover {
+  transform: scale(1.08);
+}
+.inner_row_image_large {
+  max-height: 250px;
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+.inner_row_image_large:hover {
+  transform: scale(1.09);
+}
