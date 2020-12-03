@@ -1,5 +1,7 @@
+// Api key for tmdb api
 const api_key = process.env.REACT_APP_APIKEY
 
+// endpoints for api
 const endPoints = {
     fetchNetflixOrignal : `/discover/tv?api_key=${api_key}&with_networks=213`,
     fetchTrending : `/trending/all/week?api_key=${api_key}&language=en-US`,

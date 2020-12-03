@@ -3,8 +3,12 @@ import "./nav.css";
 import search from './images/search-solid.svg';
 import gift from './images/gift-solid.svg';
 import bell from './images/bell-solid.svg'
+
 function Nav() {
+  // will add class using show state to our nav bar 
   const [show, setShow] = useState(false);
+  
+  // setting show value on the basis of the distance from the top(scroll y)
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 80) {
@@ -19,6 +23,7 @@ function Nav() {
   }, []);
 
   return (
+    // adding class make_nav_black on the basis of show state
     <div className={`navbar ${show ? "make_nav_black" : null}`}>
       <div className="inner_navbar1">
         <img
